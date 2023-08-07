@@ -2,6 +2,14 @@ package chapter11.confirm;
 
 import java.io.IOException;
 
+//
+/*
+
+ */
+
+/**
+ *
+ */
 public class FileWriter implements AutoCloseable {
     public FileWriter(String filePath) {
         System.out.println(filePath + "파일을 엽니다.");
