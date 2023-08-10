@@ -2,6 +2,8 @@ package chapter11.exercise;
 
 // 계좌
 public abstract class BankAccount {
+
+
     // 잔액
     protected int balance;
 
@@ -36,6 +38,7 @@ public abstract class BankAccount {
             otherAccount.deposit(amount);
             return true;
         }
+        // http://192.168.0.104:4860
         return false;
     }
 
