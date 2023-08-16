@@ -34,7 +34,15 @@ public class BeepPrintExample {
                 }
             }
         };
-        Thread thread = new Thread(runnable);
+        Thread thread = new Thread(() -> {
+            for (int i = 0; i < 20; i++) {
+                System.out.println("[ㄷ]");
+                try {
+                    Thread.sleep(1000);
+                } catch (Exception e) {
+                }
+            }
+        });
         thread.start();
 
         BBip bBip = new BBip();
