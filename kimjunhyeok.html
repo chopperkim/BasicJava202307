@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KimJunHyeok</title>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+        body{
+            background-color: #df52df7e;
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+        }
+        .nav-bar{
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            width: 1100px;
+            background-color: rgb(214, 185, 241);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .header > a{
+            text-decoration: none;
+            color: white;
+            padding: 30px;
+        }
+
+        .login{
+            right: 20px;
+            bottom: 20px;
+            padding: 10px;
+            border: 0;
+            box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
+            border-radius: 20px;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+        .login:hover{
+            background-color: rgb(254, 211, 255);
+        }
+
+        .main1{
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-top: 100px;
+        }
+        .main1 .main2{
+            align-items: center;
+            text-align: center;
+            position: relative;
+            margin-right: 50px;
+        }
+        .list{
+            align-items: center;
+            text-align: center;
+            position: relative;
+            background-color: white;
+        }
+        .item-box{
+            width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: 100px;
+            
+        }
+        .item-box > div{
+            width: calc(1000px / 3 - 20px);
+            height: 270px;
+            border: 0;
+            box-shadow: 1px 1px 4px 1px skyblue;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .top{
+            height: 60%;
+        }
+        .top > img{
+            height: 100%
+        }
+        .bottom{
+            height: 40%;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bottom2{
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-left: 100px;
+        }
+        .bottom2 .information{
+            align-items: center;
+            text-align: top;
+            position: relative;
+            padding-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <!-- 상단 -->
+        <div class="nav-bar">
+            <img width="100px" height="100px" src="https://jellycrew.kr/wp-content/uploads/2023/07/Logo.png" alt=""> </a>
+            <div class="header">
+                <a href="#top"> 회사소개 </a>
+                <a href="#item"> 캐릭터 목록 </a>
+                <a href="#btn1"> 오시는길 </a>
+            </div>
+            <div class="login"> 로그인/회원가입 </div>
+        </div>
+        <!-- 메인 -->
+        <div class="main1">
+            <iframe width="500" height="255" src="https://www.youtube.com/embed/A3Ke-8Sc3K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="main2">
+                <h2> JELLY CREW </h2>
+                    젤리크루는 캐릭터 산업 글로벌 플랫폼으로 성장하는 기업입니다.<br>
+                    일상 속의 캐릭터를 젤리크루에서 한번에 만나보세요!!
+                </div>
+            </div>
+    <!-- 캐릭터 리스트 -->
+        <div class="list">
+            <br><h3 id="item"> 캐릭터 목록 </h3> <br>
+            <div class="list2">
+            </div>
+            <div class="item-box">
+                <div> 
+                    <div class="top center">
+                        <img src="https://item.kakaocdn.net/do/ea891e9ce2478cdb611269965ca3cda77f9f127ae3ca5dc7f0f6349aebcdb3c4" alt="">
+                    </div>
+                    <div class="bottom center">
+                        곰돌찡과 토끼찡 <br>
+                        2000원
+                    </div>
+                </div>
+                <div> 
+                    <div class="top center">
+                        <img src="https://item.kakaocdn.net/do/ea891e9ce2478cdb611269965ca3cda77f9f127ae3ca5dc7f0f6349aebcdb3c4" alt="">
+                    </div>
+                    <div class="bottom center">
+                        곰돌찡과 토끼찡 <br>
+                        2000원
+                    </div>
+                </div>
+                <div> 
+                    <div class="top center">
+                        <img src="https://item.kakaocdn.net/do/ea891e9ce2478cdb611269965ca3cda77f9f127ae3ca5dc7f0f6349aebcdb3c4" alt="">
+                    </div>
+                    <div class="bottom center">
+                        곰돌찡과 토끼찡 <br>
+                        2000원
+                    </div>
+                </div>
+                <div> 
+                    <div class="top center">
+                        <img src="https://item.kakaocdn.net/do/ea891e9ce2478cdb611269965ca3cda77f9f127ae3ca5dc7f0f6349aebcdb3c4" alt="">
+                    </div>
+                    <div class="bottom center">
+                        곰돌찡과 토끼찡 <br>
+                        2000원
+                    </div>
+                </div>
+                <div> 
+                    <div class="top center">
+                        <img src="https://item.kakaocdn.net/do/ea891e9ce2478cdb611269965ca3cda77f9f127ae3ca5dc7f0f6349aebcdb3c4" alt="">
+                    </div>
+                    <div class="bottom center">
+                        곰돌찡과 토끼찡 <br>
+                        2000원
+                    </div>
+                </div>
+                <div> 
+                    <div class="top center">
+                        <img src="https://item.kakaocdn.net/do/ea891e9ce2478cdb611269965ca3cda77f9f127ae3ca5dc7f0f6349aebcdb3c4" alt="">
+                    </div>
+                    <div class="bottom center">
+                        곰돌찡과 토끼찡 <br>
+                        2000원
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="bottom2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3214.4039495768357!2d127.40526707581674!3d36.32675857238597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356549343eea9def%3A0xbce1e1d49463ebe8!2z64Sl7Iqk7Yq47JWE7J207Yuw6rWQ7Jyh7IS87YSw7ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1691042866520!5m2!1sko!2skr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="information">
+                    <p id="btn1">(34856) 넥스트 IT 교육센터 <br>
+                    대전광역시 중구 계룡로 825 (용두동, 희영빌딩 2층) <br>
+                    <br>
+                    <p style="font-size: 5PX;">Tel: 042-719-8850 / Fax: 042-719-8851 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
