@@ -1,6 +1,7 @@
 package chapter20;
 
 import java.sql.Date;
+import java.util.Objects;
 
 public class MemoVO {
     private int no;
@@ -10,12 +11,25 @@ public class MemoVO {
     private Date registerDate;
     private Date modifyDate;
 
-    public MemoVO(int no, String title, String content, String writer, Date registerDate) {
+    public MemoVO() {
     }
 
     public MemoVO(String title, String content) {
         this.title = title;
         this.content = content;
+    }
+
+    public MemoVO(String title, String content, String writer) {
+        this.title = title;
+        this.content = content;
+        this.writer = writer;
+    }
+
+    public MemoVO(int no, String title, String content, String writer) {
+        this.no = no;
+        this.title = title;
+        this.content = content;
+        this.writer = writer;
     }
 
     public MemoVO(int no, String title, String content, String writer, Date registerDate, Date modifyDate) {
@@ -73,6 +87,19 @@ public class MemoVO {
 
     public void setModifyDate(Date modifyDate) {
         this.modifyDate = modifyDate;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MemoVO vo = (MemoVO) o;
+        return no == vo.no && Objects.equals(title, vo.title) && Objects.equals(content, vo.content) && Objects.equals(writer, vo.writer);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(no, title, content, writer);
     }
 
     @Override
