@@ -5,6 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MemoDAO {
+    private static MemoDAO instance = new MemoDAO();
+    private MemoDAO() {
+    }
+    public static MemoDAO getInstance() {
+        return instance;
+    }
+
     public List<MemoVO> selectMemos() throws Exception {
         Class.forName("oracle.jdbc.OracleDriver");
         Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.37:1521:xe", "java", "oracle21c");
